@@ -1,5 +1,5 @@
 # Sitio Web Tecnoma 
-Este proyecto se desarrollo empleando el Framework SYMFONY version 5.
+Este proyecto se desarrolló empleando el Framework SYMFONY version 5.
 
 ### Nota
 Para hacer pruebas sobre el envío de correo electrónico es necesario modificar los campos que se indican en el archivo "PrincipalController.php"
