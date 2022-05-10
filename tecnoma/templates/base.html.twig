@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {# <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>"> #}
+        <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css')}} ">
+        <link rel="stylesheet" href="{{ asset('style.css')}} ">
+          <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=1fc38c8f9282e6a2b6416a00c8e5726792c2c4ad'></script>
+        <script src="{{ asset('bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+        <script src="{{asset('js/inicio.js')}}"></script>
+        <script src="{{asset('js/menu.js')}}"></script>
+        <script src="{{asset('js/nosotros.js')}}"></script>
+        <script src="{{asset('js/servicios.js')}}"></script>
+        <script src="{{asset('js/equipo.js')}}"></script>
+        <script src="{{asset('js/calidad.js')}}"></script>
+        <script src="{{asset('js/contacto.js')}}"></script>
+        <script src="{{asset('js/empresas.js')}}"></script>
+        
+        {# <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=1fc38c8f9282e6a2b6416a00c8e5726792c2c4ad'></script> #}
+      
+        {% block stylesheets %}          
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="app"> 
+            {% block body %}
+    
+            {% endblock %}
+         </div>
+         
+        {% block javascripts %}            
+            <script src="{{asset('js/Vue.js')}}"></script>
+            <script src="{{asset('jquery/jquery.min.js')}}"></script>
+            <script src="{{asset('js/eventos.js')}}"></script>
+        {% endblock %}
+    </body>
+
+  
+</html>

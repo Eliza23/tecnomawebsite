@@ -1,0 +1,42 @@
+body{
+    font-family: Cambria;
+}
+
+ul#opc li button {
+    color: black;
+}
+
+#guion:after{
+    bottom: 40%;
+    content: "";
+    display: flex;
+    height: 2px;
+    left: 0;
+    margin-bottom: 2%;
+    margin: 0 auto;
+    position: initial;
+    right: 50;
+    width: 20%;
+    background-color: #8BCE45; 
+}
+
+ul li a strong:hover {
+    color: #8BCE45;
+}
+
+li button#tecnologia_tab:focus, li button#hardware-tab:focus, li button#asesoria-tab:focus{
+    background-color: #8BCE45;
+    color: white;
+}
+li button#tecnologia_tab:hover, li button#hardware-tab:hover, li button#asesoria-tab:hover {
+    background-color: #8BCE45;
+    color: white;
+} 
+
+@media screen and (min-width: 350px) and (max-width: 450px) { 
+    #imagen{
+        width: 270%;
+        /* flex: content; */
+    }
+ }
+
